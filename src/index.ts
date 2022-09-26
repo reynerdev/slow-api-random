@@ -21,7 +21,7 @@ app.get('/:id', async (req, res) => {
   jsonResponse.id = id
   jsonResponse.sleepTime = sleepTime
 
-  res.send(JSON.stringify(JsonResponse))
+  res.send(JSON.stringify(jsonResponse))
 })
 
 app.listen(PORT, () => {
