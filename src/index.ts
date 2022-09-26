@@ -14,6 +14,7 @@ app.get('/:id', async (req, res) => {
   console.time('init')
   const sleepTime = await randomSleep()
   console.time('init')
+  console.log('finishid sleep')
   // console.lo
 
   const jsonResponse = JSON.parse(JSON.stringify(JsonResponse))

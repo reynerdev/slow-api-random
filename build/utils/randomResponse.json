@@ -1,0 +1,17 @@
+{
+    "monthly_payment": {
+        "total": 898,
+        "mortgage": 898,
+        "property_tax": 0,
+        "hoa": 0,
+        "annual_home_ins": 0
+    },
+    "annual_payment": {
+        "total": 10777,
+        "mortgage": 10777,
+        "property_tax": 0,
+        "hoa": 0,
+        "home_insurance": 0
+    },
+    "total_interest_paid": 123312
+}
