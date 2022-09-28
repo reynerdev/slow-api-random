@@ -6,12 +6,12 @@ import JsonResponse from '../utils/randomResponse.json'
 const app = express()
 
 app.use(express.json())
-app.use(cors)
+app.use(cors())
 
 const PORT = process.env.PORT || 3000
 
 app.get('/:id', async (req, res) => {
-  const id = parseInt(req?.params?.id)
+  const id = parseInt(req?.params?.id || '1')
 
   console.time('init')
   let sleepTime

@@ -22,7 +22,7 @@ app.use(cors_1.default);
 const PORT = process.env.PORT || 3000;
 app.get('/:id', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     var _a;
-    const id = parseInt((_a = req === null || req === void 0 ? void 0 : req.params) === null || _a === void 0 ? void 0 : _a.id);
+    const id = parseInt(((_a = req === null || req === void 0 ? void 0 : req.params) === null || _a === void 0 ? void 0 : _a.id) || '1');
     console.time('init');
     let sleepTime;
     if (id === 100) {
