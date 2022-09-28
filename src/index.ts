@@ -8,17 +8,16 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 5000
 
 app.get('/:id', async (req, res) => {
-  const id = parseInt(req?.params?.id || '1')
-
-  console.time('init')
+  const id = parseInt(req?.params?.id)
   let sleepTime
-  if (id === 100) {
+  console.time('init')
+  if (id !== 100) {
     sleepTime = await randomSleep()
   }
-  console.time('init')
+  console.timeEnd('init')
   console.log('finishid sleep')
   // console.lo
 
